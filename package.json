@@ -1,0 +1,40 @@
+{
+  "name": "telegram.bot.reminder",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start:cron:reminder-sending": "ts-node ./src/crons/init-send-reminders.cron.ts"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "chalk": "^4.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0",
+    "ramda": "^0.28.0",
+    "sweet-path": "^1.1.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^16.0.0",
+    "@types/node-cron": "^3.0.1",
+    "@types/ramda": "^0.28.13",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.17.0",
+    "eslint-plugin-react": "^7.30.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.7.3"
+  }
+}
